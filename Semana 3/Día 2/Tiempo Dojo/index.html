@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title> Tiempo Dojo </title>
+    </head>
+    <body>
+        <nav>
+            <h1>Tiempo Dojo</h1>
+            <div class="ciudades">
+                <div onclick="mostrarMensaje(this)"> Burbank </div>
+                <div onclick="mostrarMensaje(this)"> Chicago </div>
+                <div onclick="mostrarMensaje(this)"> Dallas </div>
+            </div>
+        </nav>
+        <main>
+            <div class="encabezado">
+                <h2> San Jose </h2>
+                <div>
+                    <span> Mostrar temperatura en: </span>
+                    <select onchange="cambiarTemperatura(this)" class="temperatura">
+                        <option value="c">ºC</option>
+                        <option value="f">ºF</option>
+                    </select>
+                </div>
+            </div>
+            <div class="pronostico">
+                <div class="dia">
+                    <h3> Hoy </h3>
+                    <img class="imagen-pronostico" src="./imagenes/some_rain.png" alt="Lluvioso">
+                    <div> Algo de lluvia </div>
+                    <div class="temperaturas">
+                        <div class="max">
+                            <span>24</span>º
+                        </div>
+                        <div class="min">
+                            <span>18</span>º
+                        </div>
+                    </div>
+                </div>
+                <div class="dia">
+                    <h3> Mañana </h3>
+                    <img class="imagen-pronostico" src="./imagenes/some_sun.png" alt="Soleado">
+                    <div> Soleado </div>
+                    <div class="temperaturas">
+                        <div class="max">
+                            <span>27</span>º
+                        </div>
+                        <div class="min">
+                            <span>19</span>º
+                        </div>
+                    </div>
+                </div>
+                <div class="dia">
+                    <h3> Viernes </h3>
+                    <img class="imagen-pronostico" src="./imagenes/some_clouds.png" alt="Nublado">
+                    <div> Nublado </div>
+                    <div class="temperaturas">
+                        <div class="max">
+                            <span>21</span>º
+                        </div>
+                        <div class="min">
+                            <span>16</span>º
+                        </div>
+                    </div>
+                </div>
+                <div class="dia">
+                    <h3> Sábado </h3>
+                    <img class="imagen-pronostico" src="./imagenes/some_sun.png" alt="Soleado">
+                    <div> Soleado </div>
+                    <div class="temperaturas">
+                        <div class="max">
+                            <span>26</span>º
+                        </div>
+                        <div class="min">
+                            <span>21</span>º
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="cookies">
+            <img src="./imagenes/cookie.png" alt="Cookie">
+            <div class="mensaje">
+                <h3>Stop! Cookie time</h3>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads,
+                    to provide social media features and to analyse our traffic. <a href="#">Read more</a>
+                </p>
+            </div>
+            <div class="opcion">
+                <button onclick="removerCookie(this)" class="aceptar">
+                    I accept
+                </button>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
