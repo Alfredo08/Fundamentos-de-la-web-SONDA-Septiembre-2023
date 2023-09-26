@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> API y AJAX</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <h1> Bienvenido a la práctica de API y AJAX </h1>
+        <form onsubmit="obtenerImagenes(event)">
+            <label for="numeroImagenes">
+                ¿Cuántas imágenes quieres obtener?
+            </label>
+            <input type="number" id="numeroImagenes">
+            <button type="submit">
+                Obtener
+            </button>
+        </form>
+        <div class="imagenes"></div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

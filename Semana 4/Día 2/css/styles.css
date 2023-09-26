@@ -1,0 +1,12 @@
+
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: start;
+}
+
+.imagen-individual{
+    width: 400px;
+}
