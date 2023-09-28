@@ -1,0 +1,75 @@
+h1{
+    font-size: 40px;
+}
+/* Para móviles o pantallas más grandes */
+header, main, .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu{
+    display: none;
+}
+
+.navbar{
+    background-color: rgb(150, 150, 150);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo > img{
+    width: 50%;
+}
+
+.product{
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 4px;
+    margin: 5px 10px;
+    padding: 10px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* Para tabletas y dispositivos más grandes */
+@media only screen and (min-width: 600px){
+    header{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main{
+        align-items: normal;
+    }
+}
+
+/* Para dispositivos grandes */
+@media only screen and (min-width: 992px){
+    .menu{
+        display: flex;
+        list-style: none;
+        color: white;
+        gap: 30px;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    main{
+        flex-direction: row;
+    }
+
+    .product{
+        flex: 1;
+    }
+}
